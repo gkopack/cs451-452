@@ -31,6 +31,7 @@ ALLOWED_HOSTS = [
     '192.168.0.123',
     '184.170.80.91',
     '192.168.99.100',
+    '',
 ]
 
 
@@ -139,7 +140,17 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+CACHES = {
+    "default": {
+        "BACKEND": "django_redis.cache.RedisCache",
+        "LOCATION": os.environ['REDIS_URL'],  # Here we have Redis DSN (for ex. redis://localhost:6379/1) 192.168.0.123:6379
+        "OPTIONS": {
+            "CLIENT_CLASS": "django_redis.client.DefaultClient",
+            "MAX_ENTRIES": 1000  # Increase max cache entries to 1k (from 300)
+        },
+    }
+}
 
 # Use CELERY_ prefix
-CELERY_BROKER_URL = os.environ['REDIS_URL']
+CELERY_BROKER_URL = os.environ['REDIS_URL']         #'REDIS_URL' should be available as an environment variable when hosted from keroku
 CELERY_RESULT_BACKEND = os.environ['REDIS_URL']
