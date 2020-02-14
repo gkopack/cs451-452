@@ -12,3 +12,8 @@ daphne -b "ip" -p "port" myproject.asgi:application
 daphne -b 192.168.0.123 -p 6379 django_chatroom.asgi:application (works but is local)
 daphne -b 184.170.80.91 -p 6379 django_chatroom.asgi:application (CRITICAL Listen failure: Couldn't listen on 184.170.80.91:6379: [WinError 10049] The requested address is not valid in its context.)
 i think my router isn't letting it through
+
+uploaded project to github so it can be accessed by keroku and hosted for free because i just can't access my ip from the internet...
+git add .
+git commit -m "comment here"
+git push -u origin master
