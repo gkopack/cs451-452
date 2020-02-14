@@ -1,0 +1,11 @@
+https://www.google.com/search?q=django+python&oq=django&aqs=chrome.2.69i57j0j35i39j0l5.4328j0j7&sourceid=chrome&ie=UTF-8
+https://www.djangoproject.com/
+https://docs.djangoproject.com/en/2.2/intro/install/
+https://www.google.com/search?q=django+chat+room+tutorial&oq=django+chatroom&aqs=chrome.2.69i57j0l4.8775j0j7&sourceid=chrome&ie=UTF-8
+https://www.youtube.com/watch?v=Wv5jlmJs2sU
+https://channels.readthedocs.io/en/latest/tutorial/part_1.html
+https://channels.readthedocs.io/en/latest/installation.html
+https://www.google.com/search?q=set+up+a+socket&oq=set+up+a+socket&aqs=chrome..69i57j33l4.1830j0j7&sourceid=chrome&ie=UTF-8
+https://www.google.com/search?q=python+socket&oq=python+socket&aqs=chrome..69i57j0l7.2215j0j7&sourceid=chrome&ie=UTF-8
+https://docs.python.org/3/library/socket.html
+https://www.youtube.com/watch?v=CV7_stUWvBQ&list=PLQVvvaa0QuDdzLB_0JSTTcl8E8jsJLhR5&index=4

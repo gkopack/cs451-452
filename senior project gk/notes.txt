@@ -1,0 +1,14 @@
+Scripts\activate to start the virtualenv in the folder
+need to launch the server with "python manage.py runserver 192.168.0.123:6379" otherwise it doesn't start up correctly, might work differently on another machine
+url: http://192.168.0.123:6379/chat/lobby/ local ip
+
+docker is configured to use the default machine withIP 192.168.99.100
+$ docker run -p 6379:6379 -d redis:2.8
+start redis with config in cmd redis path: redis-server .\configs\redis.conf
+try my ip:"python manage.py runserver 184.170.80.91:6379"
+url: http://184.170.80.91:6379/chat/
+
+daphne -b "ip" -p "port" myproject.asgi:application
+daphne -b 192.168.0.123 -p 6379 django_chatroom.asgi:application (works but is local)
+daphne -b 184.170.80.91 -p 6379 django_chatroom.asgi:application (CRITICAL Listen failure: Couldn't listen on 184.170.80.91:6379: [WinError 10049] The requested address is not valid in its context.)
+i think my router isn't letting it through
